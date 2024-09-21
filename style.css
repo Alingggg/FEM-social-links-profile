@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: url('assets/fonts/static/Inter-SemiBold.ttf');
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --gray1: hsl(0, 0%, 20%);
+    --gray2: hsl(0, 0%, 12%);
+    --gray3: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    margin-top: 1.9em;
+    width: 85px;
+    border-radius: 50%;
+}
+
+.profile {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 530px;
+    max-height: 530px;
+    background-color: var(--gray2);
+    display: flex;
+    flex-flow: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.profile__name {
+    font-family: 'Inter SemiBold';
+    color: rgb(227, 227, 227);
+    margin-bottom: -0.7em;
+}
+
+.profile__place {
+    font-family: 'Inter';
+    color: var(--green);
+    margin-bottom: 0.3em;
+}
+
+.profile__bio {
+    font-family: 'Inter';
+    color: rgb(191, 191, 191);
+}
+
+.profile__socials {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    width: 80%;
+}
+
+.profile__links {
+    font-family: 'Inter SemiBold';
+    max-width: 100%;
+    min-width: 100%;
+    color: rgb(220, 220, 220);
+    background-color: var(--gray1);
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-bottom: 1.2em;
+    border-radius: 8px;
+}
+
+.profile__links:hover {
+    background-color: var(--green);
+    color: var(--gray3);
+    cursor: pointer;
+}
